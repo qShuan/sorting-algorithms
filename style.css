@@ -1,0 +1,97 @@
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    margin:0;
+    width:100%;
+    height:100vh;
+    background-color: #313131;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.node-container{
+    width: 800px;
+    height: 600px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.menu{
+    height:100px;
+    width:100%;
+    background-color: #1a1a1a;
+    border-top: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.node{
+    width:30px;
+    height:100px;
+    background-color: whitesmoke;
+    margin-left: 3px;
+}
+.slider{
+    appearance: none;
+    width:200px;
+    height:15px;
+    outline:none;
+    border:none;
+    border-radius: 2em;
+    margin-top:5px;
+}
+
+input[type="range"] {
+    cursor:pointer;
+    overflow: hidden;
+    background-color: white;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #f50;
+  /*  slider progress */
+  box-shadow: -407px 0 0 400px #f50;
+}
+
+input, label {
+    display:block;
+}
+
+.sliders{
+    color:white;
+    text-shadow:0px 0px 3px black;
+    font-size:110%;
+    margin-left: 2em;
+    margin-right: 2em;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    border:none;
+    outline:none;
+    width: 125px;
+    height:50px;
+    border-radius:0.5em;
+    background-color:#f50;
+    transition: 100ms ease-in-out;
+    color:white;
+    text-shadow:0px 0px 3px black;
+    font-size:110%;
+}
+.buttons:hover{
+    cursor:pointer;
+    background-color: rgb(193, 64, 0);
+}
