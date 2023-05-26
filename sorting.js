@@ -135,7 +135,7 @@ async function BubbleSort(arr){
                 columns[j].style.backgroundColor = "red";
                 columns[j+1].style.backgroundColor = "red";
                 
-                await sleep(speed);
+                await sleep(speed_slider.max - speed + 1);
 
                 let temp = arr[j];
                 arr[j] = arr[j+1];
